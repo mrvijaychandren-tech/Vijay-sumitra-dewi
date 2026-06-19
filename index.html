@@ -218,17 +218,16 @@ function bukaUndangan(){
 
 <br><br>
 
-<a href="https://docs.google.com/spreadsheets/d/1vGnEbQPU95EQvZFNmz7TVa2rw8QkseFeum4s-R0WgqU/edit?usp=sharing" target="_blank">
+<a href="https://docs.google.com/spreadsheets/...." target="_blank">
 <button class="button">
 📖 Lihat Ucapan Tamu
-    <div id="ucapanTamu" style="margin-top:30px;"></div>
 </button>
 </a>
 
 </div>
 </div>
     <div id="ucapanTamu"></div>
-    <script>
+<script>
 fetch("https://script.google.com/macros/s/AKfycbzAj23K_oc1g9UWD1-HQNIIWMsJvjGB7UXIG1jd5zRlLoYfP22ZZgaL0vc5BWB2rhkzbA/exec")
 .then(response => response.json())
 .then(data => {
@@ -249,10 +248,14 @@ fetch("https://script.google.com/macros/s/AKfycbzAj23K_oc1g9UWD1-HQNIIWMsJvjGB7U
       </div>
     `;
   });
-catch(error =>{
+
   document.getElementById("ucapanTamu").innerHTML = html;
-"error: + error;
+
+})
+.catch(error => {
+  document.getElementById("ucapanTamu").innerHTML =
+  "Gagal memuat ucapan tamu";
 });
-    </script>
+</script>
 </body>
 </html>
