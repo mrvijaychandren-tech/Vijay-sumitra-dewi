@@ -202,5 +202,38 @@ function bukaUndangan(){
     document.getElementById("musik").play();
 }
 </script>
+    </script>
+
+<h2>Ucapan & Doa</h2>
+
+<input type="text" id="nama" placeholder="Nama Anda">
+
+<textarea id="ucapan" placeholder="Tulis ucapan dan doa..."></textarea>
+
+<button onclick="kirimUcapan()">
+Kirim Ucapan
+</button>
+
+<div id="daftarUcapan"></div>
+
+<script>
+function kirimUcapan(){
+    let nama = document.getElementById("nama").value;
+    let ucapan = document.getElementById("ucapan").value;
+
+    if(nama=="" || ucapan==""){
+        alert("Isi nama dan ucapan terlebih dahulu");
+        return;
+    }
+
+    document.getElementById("daftarUcapan").innerHTML +=
+    "<p><b>"+nama+"</b><br>"+ucapan+"</p>";
+
+    document.getElementById("nama").value="";
+    document.getElementById("ucapan").value="";
+}
+</script>
+
+
 </body>
 </html>
