@@ -206,34 +206,21 @@ function bukaUndangan(){
 
 <h2>Ucapan & Doa</h2>
 
-<input type="text" id="nama" placeholder="Nama Anda">
 
-<textarea id="ucapan" placeholder="Tulis ucapan dan doa..."></textarea>
-
-<button onclick="kirimUcapan()">
-Kirim Ucapan
-</button>
-
-<div id="daftarUcapan"></div>
-
-<script>
-function kirimUcapan(){
-    let nama = document.getElementById("nama").value;
-    let ucapan = document.getElementById("ucapan").value;
-
-    if(nama=="" || ucapan==""){
-        alert("Isi nama dan ucapan terlebih dahulu");
-        return;
-    }
-
-    document.getElementById("daftarUcapan").innerHTML +=
-    "<p><b>"+nama+"</b><br>"+ucapan+"</p>";
-
-    document.getElementById("nama").value="";
-    document.getElementById("ucapan").value="";
-}
-</script>
-
-
+<div style="text-align:center; margin-top:30px;">
+  <a href="https://forms.gle/FY93nXRMLrD7ATkm6" target="_blank">
+    <button style="
+      padding:15px 30px;
+      background:#8b4513;
+      color:white;
+      border:none;
+      border-radius:30px;
+      font-size:18px;
+      cursor:pointer;
+    ">
+      💌 Isi Buku Tamu
+    </button>
+  </a>
+</div>
 </body>
 </html>
