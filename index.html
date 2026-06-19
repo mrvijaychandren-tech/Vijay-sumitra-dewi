@@ -227,6 +227,7 @@ function bukaUndangan(){
 
 </div>
 </div>
+    <div id="ucapanTamu"></div>
     <script>
 fetch("https://script.google.com/macros/s/AKfycbzAj23K_oc1g9UWD1-HQNIIWMsJvjGB7UXIG1jd5zRlLoYfP22ZZgaL0vc5BWB2rhkzbA/exec")
 .then(response => response.json())
@@ -248,11 +249,10 @@ fetch("https://script.google.com/macros/s/AKfycbzAj23K_oc1g9UWD1-HQNIIWMsJvjGB7U
       </div>
     `;
   });
-
+catch(error =>{
   document.getElementById("ucapanTamu").innerHTML = html;
-
+"error: + error;
 });
-<div id="ucapanTamu"></div>
     </script>
 </body>
 </html>
