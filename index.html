@@ -92,11 +92,21 @@ align-items:center;
 z-index:9999;
 text-align:center;
 ">
+<button onclick="bukaUndangan()" style="
+padding:15px 30px;
+font-size:18px;
+background:#8b4513;
+color:white;
+border:none;
+border-radius:30px;
+cursor:pointer;
+">
+💌 Buka Undangan
+</button>
 <div>
 <h2>Undangan Pernikahan</h2>
 <h1>Vijay ❤️ Sumitra</h1>
 <p>20 Desember 2026</p>
-</div>
 </div>
 
 <div class="container">
@@ -169,8 +179,14 @@ days + " Hari Lagi";
 
 },1000);
 </script>
-<audio autoplay loop controls>
+<audio id="musik" loop>
     <source src="Lagu-pernikahan.mp3" type="audio/mpeg">
 </audio>
+<script>
+function bukaUndangan(){
+    document.getElementById("cover").style.display="none";
+    document.getElementById("musik").play();
+}
+</script>
 </body>
 </html>
