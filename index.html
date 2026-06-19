@@ -3,55 +3,159 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Undangan Pernikahan Vijay & Sumitra</title>
+
 <style>
 body{
-    font-family: Arial, sans-serif;
-    text-align:center;
-    background:#f8f4ef;
     margin:0;
-    padding:20px;
+    font-family:Georgia, serif;
+    background:#f8f2ea;
+    color:#333;
 }
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+    url("Pengantin.png");
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:55px;
+    margin:0;
+}
+
+.hero h2{
+    font-size:30px;
+}
+
 .container{
-    max-width:800px;
+    max-width:900px;
     margin:auto;
-    background:white;
     padding:30px;
-    border-radius:15px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    text-align:center;
 }
-h1{
+
+.foto{
+    width:300px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.section{
+    padding:40px 20px;
+}
+
+.judul{
     color:#8b4513;
+    font-size:40px;
 }
-h2{
+
+.countdown{
+    font-size:30px;
     color:#a0522d;
+    font-weight:bold;
 }
-img{
-    width:250px;
-    border-radius:50%;
-    margin:20px 0;
+
+.button{
+    display:inline-block;
+    padding:15px 25px;
+    background:#8b4513;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    margin:10px;
 }
 </style>
 </head>
+
 <body>
-<div class="container">
+
+<div class="hero">
+<div>
 <h2>Undangan Pernikahan</h2>
 <h1>Vijay ❤️ Sumitra</h1>
+<p>20 Desember 2026</p>
+</div>
+</div>
+
+<div class="container">
+
+<div class="section">
+<h2 class="judul">Assalamualaikum</h2>
+
 <p>
-Dengan hormat, kami mengundang Bapak/Ibu/Saudara/i
-untuk menghadiri acara pernikahan kami.
+Dengan hormat, kami mengundang
+Bapak/Ibu/Saudara/i untuk menghadiri
+acara pernikahan kami.
 </p>
-<img src="Pengantin.png" alt="Vijay dan Sumitra">
-<h2>Tanggal Acara</h2>
+
+<img src="Pengantin.png" class="foto">
+</div>
+
+<div class="section">
+<h2 class="judul">Menuju Hari Bahagia</h2>
+<div id="countdown" class="countdown"></div>
+</div>
+
+<div class="section">
+<h2 class="judul">Tanggal Acara</h2>
 <p>Minggu, 20 Desember 2026</p>
-<h2>Lokasi</h2>
+
+<h2 class="judul">Lokasi</h2>
 <p>Medan, Sumatera Utara</p>
+</div>
+
+<div class="section">
+<a class="button"
+href="https://wa.me/6281234567890">
+Konfirmasi Kehadiran
+</a>
+
+<a class="button"
+href="https://maps.google.com">
+Lihat Lokasi
+</a>
+</div>
+
+<div class="section">
+<h2 class="judul">Terima Kasih</h2>
+
 <p>
 Merupakan suatu kehormatan dan kebahagiaan bagi kami
 apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.
 </p>
-<h3>Terima Kasih</h3>
-<p><strong>Vijay & Sumitra</strong></p>
+
+<h2>Vijay ❤️ Sumitra</h2>
 </div>
+
+</div>
+
+<script>
+var countDownDate =
+new Date("Dec 20, 2026 00:00:00").getTime();
+
+var x = setInterval(function(){
+
+var now = new Date().getTime();
+
+var distance = countDownDate - now;
+
+var days =
+Math.floor(distance/(1000*60*60*24));
+
+document.getElementById("countdown").innerHTML =
+days + " Hari Lagi";
+
+},1000);
+</script>
+
 </body>
 </html>
