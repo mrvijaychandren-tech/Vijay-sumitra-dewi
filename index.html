@@ -252,33 +252,5 @@ fetch("https://script.google.com/macros/s/AKfycbzAj23K_oc1g9UWD1-HQNIIWMsJvjGB7U
 });
 </script>
 
-.then(response => response.json())
-.then(data => {
-
-  let html = "";
-
-  data.reverse().forEach(item => {
-    html += `
-      <div style="
-        background:#fff;
-        padding:15px;
-        margin:10px;
-        border-radius:15px;
-        box-shadow:0 2px 8px rgba(0,0,0,0.1);
-      ">
-        <b>${item.nama}</b><br>
-        ${item.ucapan}
-      </div>
-    `;
-  });
-
-  document.getElementById("ucapanTamu").innerHTML = html;
-
-})
-.catch(error => {
-  document.getElementById("ucapanTamu").innerHTML =
-  "Gagal memuat ucapan tamu";
-});
-</script>
 </body>
 </html>
