@@ -106,9 +106,9 @@ text-align:center;
     <br>
     Sumitra Dewi
 </h1>
-    <p style="font - size:20px;">
-        together Frover 
-    </p>
+    <p style="font-size:20px;">
+    Together Forever
+</p>
 <p>30 Desember 2026</p>
 
 <button onclick="bukaUndangan()" style="
@@ -210,21 +210,30 @@ function bukaUndangan(){
 
 <div style="text-align:center; margin-top:30px;">
 
-<a href="https://forms.gle/FY93nXRMLrD7ATkm6" target="_blank">
-<button class="button">
+<a class="button"
+href="https://forms.gle/FY93nXRMLrD7ATkm6"
+target="_blank">
 💌 Isi Buku Tamu
-</button>
 </a>
 
 <br><br>
 
 
 
-</div>
-</div>
-    <div id="ucapanTamu"></div>
+<div id="ucapanTamu">
 
-<script>
+<div style="
+background:#fff;
+padding:15px;
+margin:10px;
+border-radius:15px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+">
+<b>Vijay</b><br>
+Selamat datang di buku tamu.
+</div>
+
+</div>
 fetch("https://script.google.com/macros/s/AKfycbzAj23K_oc1g9UWD1-HQNIIWMsJvjGB7UXIG1jd5zRlLoYfP22ZZgaL0vc5BWB2rhkzbA/exec")
 .then(response => response.json())
 .then(data => {
