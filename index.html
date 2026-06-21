@@ -390,11 +390,7 @@ function buatMerpati(){
 
         burung.innerHTML = "🕊️";
 
-        burung.style.top =
-            (30 + Math.random()*20) + "%";
-
-        burung.style.animationDelay =
-            (i*0.5) + "s";
+        
 
         document.body.appendChild(burung);
 
@@ -403,6 +399,7 @@ function buatMerpati(){
         },8000);
     }
 }
+setInterval(buatMerpati, 5000);
 </script>
 </script>
 </body>
