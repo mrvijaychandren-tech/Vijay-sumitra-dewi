@@ -7,6 +7,24 @@
 <title>Undangan Pernikahan Vijay Chandren & Sumitra Dewi</title>
 
 <style>
+    .merpati{
+    position:fixed;
+    font-size:40px;
+    z-index:9999;
+    pointer-events:none;
+    animation:terbang 8s linear forwards;
+}
+
+@keyframes terbang{
+    0%{
+        left:-100px;
+        top:40%;
+    }
+    100%{
+        left:110%;
+        top:20%;
+    }
+}
     .petal{
     position:fixed;
     top:-20px;
@@ -293,6 +311,7 @@ days + " Hari Lagi";
 function bukaUndangan(){
     document.getElementById("cover").style.display="none";
     document.getElementById("musik").play();
+    buatMerpati();
 }
 </script>
 
@@ -360,6 +379,31 @@ function buatKelopak(){
 }
 
 setInterval(buatKelopak,400);
+<script>
+function buatMerpati(){
+
+    for(let i=0;i<2;i++){
+
+        const burung = document.createElement("div");
+
+        burung.classList.add("merpati");
+
+        burung.innerHTML = "🕊️";
+
+        burung.style.top =
+            (30 + Math.random()*20) + "%";
+
+        burung.style.animationDelay =
+            (i*0.5) + "s";
+
+        document.body.appendChild(burung);
+
+        setTimeout(()=>{
+            burung.remove();
+        },8000);
+    }
+}
+</script>
 </script>
 </body>
 </html>
