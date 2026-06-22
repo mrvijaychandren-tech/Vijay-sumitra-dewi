@@ -68,11 +68,14 @@
 body{
     margin:0;
     font-family:Georgia, serif;
-    background:url('background.jpeg') center center fixed;
+    background:url('background.jpeg') center center no-repeat;
     background-size:cover;
     color:#333;
+    @media (max-width:768px){
+    body{
+        background-position: top center;
+    }
 }
-
 .nama-pengantin{
     text-align:center;
     font-size:28px;
