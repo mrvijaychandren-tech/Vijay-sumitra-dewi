@@ -430,12 +430,7 @@ margin-bottom:20px;
 ">
 Tamu Undangan
 </h3>
-function bukaUndangan(){
-    document.getElementById("cover").style.display="none";
-    document.getElementById("musik").play();
-    buatMerpati();
-}
-</script>
+    
 
 <div class="section">
 <h2 class="judul">Ucapan & Doa</h2>
@@ -449,8 +444,6 @@ target="_blank">
 </a>
 
 <br><br>
-
-
 <div id="ucapanTamu"></div>
 
 <script>
@@ -530,6 +523,13 @@ if(nama){
     document.getElementById("namaTamu").innerText =
     decodeURIComponent(nama);
 }
+        <script>
+function bukaUndangan(){
+    document.getElementById("cover").style.display="none";
+    document.getElementById("musik").play();
+    buatMerpati();
+}
+</script>
 </script>
 </body>
 </html>
