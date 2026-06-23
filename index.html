@@ -68,14 +68,15 @@
 body{
     margin:0;
     font-family:Georgia, serif;
-    background:url('background.jpeg') center top no-repeat;
+    background:
+    linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)),
+    url('background.jpeg') center center no-repeat;
     background-size:cover;
-    background-attachment:fixed;
     color:#333;
 }
-    @media (max-width:768px){
+   @media (max-width:768px){
     body{
-        background-position:center 100%;
+        background-position:center top;
     }
 }
 .nama-pengantin{
