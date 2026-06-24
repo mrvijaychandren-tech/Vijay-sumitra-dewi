@@ -202,6 +202,22 @@ body{
     border-radius:20px;
     margin-bottom:20px;
 }
+.bintang{
+    position:fixed;
+    color:white;
+    z-index:1;
+    pointer-events:none;
+    animation:kelapKelip 2s infinite alternate;
+}
+
+@keyframes kelapKelip{
+    from{
+        opacity:0.2;
+    }
+    to{
+        opacity:1;
+    }
+}
 </style>
 </head>
 
@@ -545,7 +561,32 @@ function bukaUndangan(){
     document.getElementById("musik").play();
     buatMerpati();
 }
-</script>
+<script>
+function buatBintang(){
+
+    const bintang = document.createElement("div");
+
+    bintang.classList.add("bintang");
+
+    bintang.innerHTML = "✦";
+
+    bintang.style.left =
+        Math.random() * window.innerWidth + "px";
+
+    bintang.style.top =
+        Math.random() * window.innerHeight + "px";
+
+    bintang.style.fontSize =
+        (10 + Math.random() * 15) + "px";
+
+    document.body.appendChild(bintang);
+
+    setTimeout(()=>{
+        bintang.remove();
+    },5000);
+}
+
+setInterval(buatBintang,300);
 </script>
 </body>
 </html>
