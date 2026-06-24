@@ -54,6 +54,28 @@
     animation:jatuh linear infinite;
     z-index:1;opacity:0.5;
 }
+.bulan{
+    position:fixed;
+    top:20px;
+    right:20px;
+    font-size:70px;
+    z-index:1;
+    animation:bulanGlow 3s ease-in-out infinite;
+    pointer-events:none;
+}
+
+@keyframes bulanGlow{
+    0%{
+        filter:drop-shadow(0 0 10px #fff);
+    }
+    50%{
+        filter:drop-shadow(0 0 25px #fff)
+               drop-shadow(0 0 40px #87cefa);
+    }
+    100%{
+        filter:drop-shadow(0 0 10px #fff);
+    }
+}
 
 @keyframes jatuh{
     0%{
@@ -222,6 +244,7 @@ body{
 </head>
 
 <body>
+    <div class="bulan">🌕</div>
 
 <div id="cover" style="
 position:fixed;
