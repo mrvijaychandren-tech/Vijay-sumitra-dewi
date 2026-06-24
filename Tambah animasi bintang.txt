@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Undangan Pernikahan Vijay Chandren & Sumitra Dewi</title>
+<style>
+.count-box{
+    background:white;
+    width:120px;
+    height:120px;
+    border-radius:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.count-number{
+    font-size:28px;
+    font-weight:bold;
+    color:#8b4513;
+}
+
+.count-label{
+    font-size:14px;
+    color:#666;
+}
+    .merpati{
+    position:fixed;
+    font-size:40px;
+    z-index:1;
+    pointer-events:none;
+    animation:terbang 8s linear forwards;
+}
+
+@keyframes terbang{
+    0%{
+        left:-100px;
+        top:40%;
+    }
+    100%{
+        left:110%;
+        top:20%;
+    }
+}
+    .petal{
+    position:fixed;
+    top:-20px;
+    font-size:20px;
+    pointer-events:none;
+    animation:jatuh linear infinite;
+    z-index:1;opacity:0.5;
+}
+
+@keyframes jatuh{
+    0%{
+        transform:translateY(-20px) rotate(0deg);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(110vh) rotate(360deg);
+        opacity:0;
+    }
+}
+body{
+    margin:0;
+    font-family:Georgia, serif;
+    background:
+    linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url('background1.jpeg');
+    background-size:cover;
+    background-attachment:fixed;
+    color:white;
+}
+}
+.nama-pengantin{
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    line-height:1.2;
+    margin:15px 0 20px 0;
+}
+
+.love{
+    color:red;
+    font-size:35px;
+    margin:0;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+    url("Pengantin.png");
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:red;
+}
+
+.hero h1{
+    font-size:42px;
+    margin:0;
+}
+
+.hero h2{
+    font-size:30px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:30px;
+    text-align:center;
+}
+.section{
+    background:rgba(0,0,0,0.45);
+    margin:20px 0;
+    padding:25px;
+    border-radius:20px;
+    backdrop-filter:blur(5px);
+    color:white;
+}
+.foto{
+    display:block;
+    width:300px;
+    max-width:90%;
+    margin:0 auto;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+.section{
+    padding:15px;   
+}
+.judul{
+    color:#FF69B4;
+    font-size:28px;
+}
+
+.countdown{
+    font-size:30px;
+    color:#0000FF;
+    font-weight:bold;
+}
+
+.button{
+    display:inline-block;
+    padding:15px 25px;
+    background:linear-gradient(45deg,#8b6508,#ffd700);
+    color:black;
+    font-weight:bold;
+    text-decoration:none;
+    border-radius:30px;
+}
+#countdown{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    flex-wrap:nowrap;
+    margin-top:20px;
+}
+
+.count-box{
+    background:white;
+    width:80px;
+    height:80px;
+    border-radius:15px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.count-number{
+    font-size:30px;
+    font-weight:bold;
+    color:#8b4513;
+}
+
+.count-label{
+    font-size:14px;
+    color:#666;
+}
+.gallery{
+    width:100%;
+    max-width:none;
+    margin:0;
+    padding:0;
+}
+
+.gallery img{
+    width:100%;
+    max-width:100%;
+    display:block;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+.bintang{
+    position:fixed;
+    color:white;
+    z-index:1;
+    pointer-events:none;
+    animation:kelapKelip 2s infinite alternate;
+}
+
+@keyframes kelapKelip{
+    from{
+        opacity:0.2;
+    }
+    to{
+        opacity:1;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div id="cover" style="
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:
+
+url('cover1.jpg') center/cover no-repeat;
+    background-size:cover;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+text-align:center;
+">
+
+
+
+<div style="
+background:transparent;
+padding:40px;
+border-radius:none;
+backdrop-filter:none;
+">
+<h2 style="
+color:green;
+letter-spacing:3px;
+font-size:26px;
+text-transform:uppercase;
+font-family: 'Dancing Script', cursive; 
+  font-size: 40px;
+@import url('https://googleapis.com');
+text-shadow: 0 0 10px #000000, 0 0 25px #000000;
+line-height:1.3;
+">
+The Wedding Of
+</h2>
+<h1 style="
+color:pink;
+font-family: 'Dancing Script', cursive; 
+  font-size: 40px;
+@import url('https://googleapis.com');
+text-shadow: 0 0 10px #000000, 0 0 25px #000000;
+line-height:1;
+">
+    Vijay
+    <br>
+    🖤
+    <br>
+    Sumitra
+</h1>
+    <p style="
+color:white;
+font-size:18px;
+margin-top:15px;
+">
+Kepada Yth.
+</p>
+
+<h3 id="namaTamu" style="
+color:#FFFF00;
+font-size:26px;
+margin-bottom:20px;
+">
+Tamu Undangan
+</h3>
+    <p style="
+color:#f5d48a;
+font-size:24px;
+font-style:italic;
+">
+Together Forever
+</p>
+
+<p style="
+color:white;
+font-size:18px;
+margin-bottom:20px;
+">
+18 September 2026
+</p>
+
+<button onclick="bukaUndangan()" 
+style="
+padding:18px 45px;
+font-size:12px;
+font-weight:bold;
+color:blue;
+background:linear-gradient(45deg,#6d0000,#b8860b);
+border:3px solid Red;
+border-radius:50px;
+box-shadow:0 0 20px White;
+cursor:pointer;
+">
+💌 Buka Undangan
+</button>
+</div>
+    </div>
+    
+<div class="container">
+
+<div class="section">
+<h2 class="judul">Om Swastyastu</h2>
+
+<p>
+Dengan hormat, kami mengundang
+Bapak/Ibu/Saudara/i untuk menghadiri
+acara pernikahan kami.
+</p>
+
+<img src="Pengantin.png" class="foto">
+</div>
+
+<div class="section">
+<h2 class="judul">Menuju Hari Bahagia</h2>
+<div id="countdown" style="
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+margin-top:20px;
+"></div>
+
+
+<div class="section">
+<h2 class="judul">Tanggal Acara</h2>
+<p>Friday, 18 September 2026</p>
+
+<h2 class="judul">Lokasi</h2>
+<p>Medan, Sumatera Utara</p>
+</div>
+
+<div class="section">
+<a class="button"
+href="https://wa.me/6281263412947">
+Konfirmasi Kehadiran
+</a>
+
+<a class="button"
+href="https://maps.google.com">
+Lihat Lokasi
+</a>
+</div>
+</div>
+<div class="section">
+    <div class="section">
+<h2 class="judul">Galeri Kami</h2>
+
+<div class="gallery">
+
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+<img src="foto3.jpg">
+<img src="foto4.jpg">
+<img src="foto5.jpg">
+<img src="foto6.jpg">
+<img src="foto7.jpg">
+<img src="foto8.jpg">
+<img src="Foto (1).jpeg">
+<img src="Foto (2).jpeg">
+<img src="Foto (3).jpeg">
+<img src="Foto (4).jpeg">
+<img src="Foto (5).jpeg">
+<img src="Foto (6).jpeg">
+<img src="Foto (7).jpeg">
+<img src="Foto (8).jpeg">
+<img src="Foto (9).jpeg">
+<img src="Foto (10).jpeg">
+<img src="Foto (11).jpeg">
+<img src="Foto (12).jpeg">
+<img src="Foto (13).jpeg">
+<img src="Foto (14).jpeg">
+<img src="Foto (15).jpeg">
+<img src="Foto (15).jpeg">
+<img src="Foto (15).jpeg">
+<img src="Foto (15).jpeg">
+</div>
+<h2 class="judul">Terima Kasih</h2>
+
+<p>
+Merupakan suatu kehormatan dan kebahagiaan bagi kami
+apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.
+</p>
+
+<div class="nama-pengantin">
+    <div>Vijay Chandren</div>
+    <div class="love">❤️</div>
+    <div>Sumitra Dewi</div>
+</div>
+
+</div>
+
+</div>
+<script>
+var countDownDate = new Date("Sep 18, 2026 00:00:00").getTime();
+
+setInterval(function(){
+
+var now = new Date().getTime();
+
+var distance = countDownDate - now;
+
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+document.getElementById("countdown").innerHTML = `
+
+<div class="count-box">
+<div class="count-number">${days}</div>
+<div class="count-label">Hari</div>
+</div>
+
+<div class="count-box">
+<div class="count-number">${hours}</div>
+<div class="count-label">Jam</div>
+</div>
+
+<div class="count-box">
+<div class="count-number">${minutes}</div>
+<div class="count-label">Menit</div>
+</div>
+
+<div class="count-box">
+<div class="count-number">${seconds}</div>
+<div class="count-label">Detik</div>
+</div>
+
+`;
+
+},1000);
+</script>
+<audio id="musik" loop>
+    <source src="Lagu-pernikahan.mp3" type="audio/mpeg">
+</audio>
+   
+    
+
+<div class="section">
+<h2 class="judul">Ucapan & Doa</h2>
+
+<div style="text-align:center; margin-top:15px;">
+
+<a class="button"
+href="https://forms.gle/4oKBdXJWXKu4FEBV6"
+target="_blank">
+💌 Isi Buku Tamu
+</a>
+
+<br><br>
+<div id="ucapanTamu"></div>
+
+<script>
+fetch("https://script.google.com/macros/s/AKfycbzkqJCcvry_43-gr0UtZpmiOYIsPveRavjCmm5-U9XjpPdkGceNCat8D3X5p1tvcQ-n/exec")
+.then(response => response.json())
+.then(data => {
+
+  let html = "";
+
+  data.reverse().forEach(item => {
+    html += `
+      <div style="
+        background:#fff;
+        color:#000;
+        padding:15px;
+        margin:10px;
+        border-radius:15px;
+        box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      ">
+        <b>${item.nama}</b><br>
+        ${item.ucapan}
+      </div>
+    `;
+  });
+
+  document.getElementById("ucapanTamu").innerHTML = html;
+
+})
+.catch(error => {
+  document.getElementById("ucapanTamu").innerHTML =
+  "Gagal memuat ucapan tamu";
+});
+</script>
+<script>
+function buatKelopak(){
+    const petal = document.createElement("div");
+    petal.classList.add("petal");
+    petal.innerHTML = "🌸";
+
+    petal.style.left = Math.random() * window.innerWidth + "px";
+    petal.style.animationDuration = (5 + Math.random() * 5) + "s";
+    petal.style.fontSize = (15 + Math.random() * 15) + "px";
+
+    document.body.appendChild(petal);
+
+    setTimeout(()=>{
+        petal.remove();
+    },10000);
+}
+
+setInterval(buatKelopak,400);
+
+function buatMerpati(){
+    for(let i=0;i<2;i++){
+
+        const burung = document.createElement("div");
+
+        burung.classList.add("merpati");
+
+        burung.innerHTML = "🕊️";
+
+        
+
+        document.body.appendChild(burung);
+
+        setTimeout(()=>{
+            burung.remove();
+        },8000);
+    }
+}//
+setInterval(buatMerpati, 5000);
+</script>
+<script>
+const params = new URLSearchParams(window.location.search);
+const nama = params.get("to");
+
+if(nama){
+    document.getElementById("namaTamu").innerText =
+    decodeURIComponent(nama);
+}
+
+function bukaUndangan(){
+    document.getElementById("cover").style.display="none";
+    document.getElementById("musik").play();
+    buatMerpati();
+}
+</script>
+<script>
+function buatBintang(){
+
+    const bintang = document.createElement("div");
+
+    bintang.classList.add("bintang");
+
+    bintang.innerHTML = "✦";
+
+    bintang.style.left =
+        Math.random() * window.innerWidth + "px";
+
+    bintang.style.top =
+        Math.random() * window.innerHeight + "px";
+
+    bintang.style.fontSize =
+        (10 + Math.random() * 15) + "px";
+
+    document.body.appendChild(bintang);
+
+    setTimeout(()=>{
+        bintang.remove();
+    },5000);
+}
+
+setInterval(buatBintang,300);
+</script>
+</body>
+</html>
