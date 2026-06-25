@@ -49,7 +49,15 @@ content="summary_large_image">
     justify-content:center;
     align-items:center;
 }
-
+.gift-card{
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,215,0,.4);
+    border-radius:20px;
+    padding:20px;
+    margin:20px auto;
+    max-width:400px;
+    backdrop-filter:blur(10px);
+}
 .count-number{
     font-size:28px;
     font-weight:bold;
@@ -457,6 +465,44 @@ Lihat Lokasi
 <img src="Foto (15).jpeg">
 <img src="Foto (15).jpeg">
 </div>
+        <div class="section">
+
+<h2 class="judul">💝 Wedding Gift</h2>
+
+<p>
+Doa restu Anda merupakan hadiah terindah bagi kami.
+Namun apabila ingin memberikan tanda kasih, dapat melalui rekening berikut.
+</p>
+
+<div class="gift-card">
+
+<h3>🏦 Bank BCA</h3>
+
+<p><b>Vijay Chandren</b></p>
+
+<p id="bca">1234567890</p>
+
+<button class="button" onclick="copyRek('1234567890')">
+📋 Salin Nomor Rekening
+</button>
+
+</div>
+
+<br>
+
+<div class="gift-card">
+
+<h3>📱 QRIS</h3>
+
+<img src="qris.png"
+style="
+width:220px;
+border-radius:15px;
+">
+
+</div>
+
+</div>
 <h2 class="judul">Terima Kasih</h2>
 
 <p>
@@ -658,7 +704,10 @@ function buatBintang(){
     },5000);
 }
 setInterval(buatBintang,300);
-
+function copyRek(nomor){
+    navigator.clipboard.writeText(nomor);
+    alert("Nomor rekening berhasil disalin.");
+}
 </script>
     </div>
 </div>
