@@ -50,13 +50,145 @@ content="summary_large_image">
     align-items:center;
 }
 .gift-card{
-    background:rgba(255,255,255,.12);
-    border:1px solid rgba(255,215,0,.4);
-    border-radius:20px;
-    padding:20px;
-    margin:20px auto;
-    max-width:400px;
-    backdrop-filter:blur(10px);
+    position:relative;
+    max-width:500px;
+    margin:25px auto;
+    padding:30px 25px;
+    border-radius:30px;
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:2px solid rgba(255,215,0,.4);
+
+    box-shadow:
+    0 0 25px rgba(255,215,0,.25),
+    inset 0 0 20px rgba(255,255,255,.05);
+
+    overflow:hidden;
+}
+
+.gift-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    linear-gradient(135deg,
+    rgba(255,255,255,.12),
+    transparent 40%);
+    pointer-events:none;
+}
+
+.bank-logo{
+    width:120px;
+    display:block;
+    margin:0 auto 10px;
+}
+
+.bank-title{
+    color:#FFD700;
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.nama-rek{
+    font-size:34px;
+    font-weight:bold;
+    color:#fff;
+    margin:15px 0;
+}
+
+.no-box{
+    margin:25px auto;
+    max-width:340px;
+    padding:18px;
+
+    border-radius:18px;
+
+    background:rgba(0,0,0,.45);
+
+    border:1px solid rgba(255,215,0,.35);
+}
+
+.no-box small{
+    color:#d6b85a;
+    display:block;
+    margin-bottom:10px;
+}
+
+.no-rek{
+    font-size:32px;
+    letter-spacing:4px;
+    color:white;
+}
+
+.copy-btn{
+    width:100%;
+    max-width:340px;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:linear-gradient(90deg,#9b6b00,#ffd54f);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.copy-btn:hover{
+    transform:scale(1.03);
+}
+
+.copy-btn.copied{
+    background:#28a745;
+}
+
+.copy-btn .check{
+    display:none;
+}
+
+.copy-btn.copied .text{
+    display:none;
+}
+
+.copy-btn.copied .check{
+    display:inline;
+}
+
+.toast{
+    position:fixed;
+    left:50%;
+    bottom:30px;
+    transform:translateX(-50%);
+
+    background:#222;
+
+    color:white;
+
+    padding:12px 20px;
+
+    border-radius:30px;
+
+    opacity:0;
+
+    transition:.4s;
+
+    z-index:999999;
+}
+
+.toast.show{
+    opacity:1;
 }
 .count-number{
     font-size:28px;
