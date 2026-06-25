@@ -65,23 +65,40 @@ Buat Link
 
 function buatLink(){
 
-const nama=document.getElementById("nama").value;
+    const nama = document.getElementById("nama").value;
 
-const link=
-"https://mrvijaychandren-tech.github.io/Vijay-sumitra-dewi/?to="
-+
-encodeURIComponent(nama);
+    const link = "https://mrvijaychandren-tech.github.io/Vijay-sumitra-dewi/?to=" + encodeURIComponent(nama);
 
-document.getElementById("hasil").innerHTML=`
+    document.getElementById("hasil").innerHTML = `
+        <input
+            value="${link}"
+            readonly
+            style="
+                width:90%;
+                padding:12px;
+                margin-top:20px;
+                border-radius:10px;
+                font-size:16px;
+            ">
 
-<p>${link}</p>
+        <br><br>
 
-<button onclick="copyLink('${link}')">
-Copy Link
-</button>
+        <button onclick="copyLink('${link}')">
+            📋 Copy Link
+        </button>
 
-`;
+        <button onclick="window.open('${link}','_blank')">
+            👁️ Lihat Undangan
+        </button>
 
+        <br><br>
+
+        <a href="https://wa.me/?text=${encodeURIComponent(link)}">
+            <button>
+                📲 Kirim WhatsApp
+            </button>
+        </a>
+    `;
 }
 
 function copyLink(link){
