@@ -608,32 +608,37 @@ Namun apabila ingin memberikan tanda kasih, dapat melalui rekening berikut.
 
 <div class="gift-card">
 
-<h3>🏦 Bank BCA</h3>
+<img src="bca.png" class="bank-logo">
 
-<p><b>Vijay Chandren</b></p>
+<div class="bank-title">
+Bank BCA
+</div>
 
-<p>1234567890</p>
+<div class="nama-rek">
+Vijay Chandren
+</div>
 
-<button class="button"
-onclick="copyRek('1234567890')">
-📋 Salin Nomor Rekening
-</button>
+<div class="no-box">
+
+<small>Nomor Rekening</small>
+
+<div class="no-rek" id="rekBCA">
+1234567890
+</div>
 
 </div>
 
-<br>
+<button class="copy-btn"
+onclick="copyRek('1234567890',this)">
 
-<div class="gift-card">
-
-<h3>🏦 Bank Mandiri</h3>
-
-<p><b>Sumitra Dewi</b></p>
-
-<p>0987654321</p>
-
-<button class="button"
-onclick="copyRek('0987654321')">
+<span class="text">
 📋 Salin Nomor Rekening
+</span>
+
+<span class="check">
+✔ Berhasil Disalin
+</span>
+
 </button>
 
 </div>
@@ -854,12 +859,39 @@ function buatBintang(){
     },5000);
 }
 setInterval(buatBintang,300);
-function copyRek(nomor){
-    navigator.clipboard.writeText(nomor);
-    alert("Nomor rekening berhasil disalin.");
+...
+
+<script>
+
+function copyRek(nomor,btn){
+
+navigator.clipboard.writeText(nomor);
+
+btn.classList.add("copied");
+
+const toast=document.getElementById("toast");
+
+toast.classList.add("show");
+
+setTimeout(()=>{
+
+btn.classList.remove("copied");
+
+toast.classList.remove("show");
+
+},2000);
+
 }
+
 </script>
-    </div>
+
+<!-- Toast Notification -->
+<div class="toast" id="toast">
+✅ Nomor rekening berhasil disalin
+</div>
+
+</body>
+</html>
 </div>
 <button class="music-btn" onclick="toggleMusic()">
 🎶
