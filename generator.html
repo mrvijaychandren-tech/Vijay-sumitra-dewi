@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Generator Link Undangan</title>
+
+<style>
+
+body{
+    font-family:Arial;
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+input{
+    width:90%;
+    max-width:400px;
+    padding:15px;
+    font-size:18px;
+    border-radius:10px;
+    border:none;
+}
+
+button{
+    margin-top:15px;
+    padding:15px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    background:gold;
+    cursor:pointer;
+}
+
+#hasil{
+    margin-top:25px;
+    word-break:break-all;
+    color:#00ff99;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Generator Link Undangan</h1>
+
+<input
+id="nama"
+placeholder="Masukkan Nama Tamu">
+
+<br>
+
+<button onclick="buatLink()">
+Buat Link
+</button>
+
+<div id="hasil"></div>
+
+<script>
+
+function buatLink(){
+
+const nama=document.getElementById("nama").value;
+
+const link=
+"https://mrvijaychandren-tech.github.io/Vijay-sumitra-dewi/?to="
++
+encodeURIComponent(nama);
+
+document.getElementById("hasil").innerHTML=`
+
+<p>${link}</p>
+
+<button onclick="copyLink('${link}')">
+Copy Link
+</button>
+
+`;
+
+}
+
+function copyLink(link){
+
+navigator.clipboard.writeText(link);
+
+alert("Link berhasil disalin.");
+
+}
+
+</script>
+
+</body>
+</html>
