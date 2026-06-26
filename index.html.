@@ -75,18 +75,21 @@ content="summary_large_image">
 }   
 .cover-name{
     font-family:'Dancing Script', cursive;
-    font-size:42px;
+    font-size:68px;
     font-weight:700;
     color:#ffffff;
+    line-height:1.1;
     text-shadow:
-    0 0 8px rgba(212,175,55,.6),
-    0 0 18px rgba(0,0,0,.7);
-}   
+        0 0 8px rgba(212,175,55,.5),
+        0 2px 8px rgba(0,0,0,.8);
+    animation:fadeName 2s ease;
+}
 .heart-black{
     color:#d4af37;
     display:inline-block;
-    font-size:38px;
-    margin:12px 0;
+    font-size:36px;
+    margin:10px 0;
+    animation:pulseHeart 2s infinite;
 }   
 .to{
     color:white;
@@ -569,6 +572,25 @@ body{
     }
     to{
         opacity:1;
+    }
+}
+@keyframes pulseHeart{
+    0%,100%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.15);
+    }
+}
+
+@keyframes fadeName{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
     }
 }
 </style>
