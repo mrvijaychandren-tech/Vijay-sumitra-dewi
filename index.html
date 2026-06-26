@@ -33,7 +33,10 @@ content="website">
 <meta name="twitter:card"
 content="summary_large_image">
 <style>
-    
+    button:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 25px rgba(212,175,55,.9);
+}
 /* ==========================
    COVER
 ========================== */
@@ -48,6 +51,16 @@ content="summary_large_image">
     position:relative;
     overflow:hidden;
 }    
+    .cover::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.35);
+    z-index:1;
+}
 .cover-content{
     position:relative;
     z-index:2;
@@ -645,17 +658,18 @@ backdrop-filter:none;
     18 September 2026
 </p>
 
-<button onclick="bukaUndangan()" 
+<button onclick="bukaUndangan()"
 style="
 padding:18px 45px;
-font-size:12px;
+font-size:17px;
 font-weight:bold;
-color:blue;
-background:linear-gradient(45deg,#6d0000,#b8860b);
-border:3px solid Red;
+color:#fff;
+background:linear-gradient(135deg,#1a1a1a,#000000);
+border:2px solid #d4af37;
 border-radius:50px;
-box-shadow:0 0 20px White;
 cursor:pointer;
+box-shadow:0 0 15px rgba(212,175,55,.6);
+transition:all .3s ease;
 ">
 💌 Buka Undangan
 </button>
