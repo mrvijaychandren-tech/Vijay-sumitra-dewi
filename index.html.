@@ -1105,7 +1105,6 @@ function buatBintang(){
 setInterval(buatBintang,300);
 </script>
 
-
 <script>
 
 function copyRek(nomor,btn){
@@ -1135,9 +1134,9 @@ toast.classList.remove("show");
 ✅ Nomor rekening berhasil disalin
 </div>
 
-</div>
 <button class="music-btn" onclick="toggleMusic()">
 🎶
 </button>
+
 </body>
 </html>
