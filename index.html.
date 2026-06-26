@@ -1134,8 +1134,6 @@ toast.classList.remove("show");
 ✅ Nomor rekening berhasil disalin
 </div>
 
-</body>
-</html>
 </div>
 <button class="music-btn" onclick="toggleMusic()">
 🎶
