@@ -34,6 +34,33 @@ content="website">
 content="summary_large_image">
 <style>
     .gold-line{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    margin:18px 0;
+}
+
+.gold-line .line{
+    width:120px;
+    height:2px;
+    background:linear-gradient(
+        to right,
+        transparent,
+        #c89b3c,
+        #ffd700,
+        #c89b3c,
+        transparent
+    );
+}
+
+.gold-icon{
+    font-size:24px;
+    color:#d4af37;
+    text-shadow:
+        0 0 6px rgba(255,215,0,.5);
+}
+    .gold-line{
         display: flex; 
     align-items:center;
     justify-content:center;
@@ -554,8 +581,8 @@ The Wedding Of
 <div class="gold-line">
     <span class="line"></span>
 
-    <span class="ornament ornament-top">
-        ✦
+    <span class="gold-icon">
+        ❦
     </span>
 
     <span class="line"></span>
