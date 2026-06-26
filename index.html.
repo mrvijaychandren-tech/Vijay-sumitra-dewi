@@ -1103,7 +1103,7 @@ function buatBintang(){
     },5000);
 }
 setInterval(buatBintang,300);
-...
+
 
 <script>
 
